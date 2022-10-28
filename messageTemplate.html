@@ -1,0 +1,82 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <base target="_top">
+    </head>
+    <body>
+    <p>Hola <span style="font-weight:bold"><?= entityName ?></span>!!!</p>
+    <? if (type === "Aprobado A" || type === "Aprobado B" || type === "Aprobado C") { ?>
+    <p>¡Gracias por completar el formulario!</p>
+  
+    <p>Queremos notificarles que la Dirección de Certificaciones de DEVA ha aprobado la solicitud de Certificación de su  <?= entityType ?>.</p> 
+    <p>Nos llena de alegría que hayan confiado en nosotros para su desarrollo y que compartan los mismos valores que promovemos desde la Asociación.</p>  
+    <p>Para continuar con el proceso de certificación te solicitamos que adjuntes (respondiendo a este mensaje) los siguientes archivos:</p>
+
+    <? if(type === "Aprobado A") {?>
+    <ul>
+    <li><?= parrafo1 ?></li>
+    <li><?= parrafo2 ?></li>
+    <li><?= parrafo3 ?></li>
+    <li><?= parrafo4 ?></li>
+    <li><?= parrafo5 ?></li>
+    <li><?= parrafo6 ?></li>
+    <li><?= parrafo7 ?></li>
+    </ul>
+    <p><?= parrafo8 ?></p>
+
+    <? } else if(type === "Aprobado B") { ?>
+    <ul>
+    <li><?= parrafo1 ?></li>
+    <li><?= parrafo2 ?></li>
+    <li><?= parrafo3 ?></li>
+    <li><?= parrafo4 ?></li>
+    <li><?= parrafo5 ?></li>
+    </ul>
+    <p><?= parrafo6 ?></p>
+
+    <? } else { ?>
+    <ul>
+    <li><?= parrafo1 ?></li>
+    </ul>
+    <p><?= parrafo2 ?></p>
+    <p><?= parrafo3 ?></p>
+    
+    <? } ?>
+
+    <? } else if(type === "Entrevista")  { ?>
+
+    <p>Te informamos que la dirección de certificaciones de DEVA ha realizado un análisis de tu solicitud y aprobó los requisitos iniciales para procesar tu certificación. Para continuar te informamos que deberás asistir a una reunión informativa a cargo de la dirección de certificaciones el día <span style="font-weight:bold"><?= interviewDate?></span> que se realizara en el canal <a href="http://discord.gg/6b5cGCZct5">Sala de Entrevistas</a>, que se encuentra en el canal oficial de DEVA en discord,sección Entidades pre-aprobadas.</p>
+
+    <p>El objetivo de la misma es informarte de todo lo que significa tener la certificación DEVA. Además, asistir a la misma es un requisito fundamental para obtener la certificación. En caso de que no puedas asistir a la reunión, te solicitamos que nos informes por este medio para reprogramar tu cupo a la misma.</p>
+
+    <? } else { ?>
+    <p>Queremos notificarles que la Dirección de Certificaciones de DEVA ha rechazado la solicitud de Certificación de su  <?= entityType ?>.</p>
+  
+    <p>Parte de nuestra labor como Asociación es poder ayudarlos para que puedan crecer como organizaciòn. La Certificación DEVA  tiene como requisito   mínimo tener 1 o más redes sociales y un mínimo de 1000 seguidores. Esto es un parámetro que nos ayuda a entender si el equipo viene realizando una labor de comunicación que les permita crecer en el tiempo.</p> 
+  <p>Es por esto, que les recomendamos los siguientes puntos:</p>
+  <ul>
+  <li>1 - Tener 2 o más redes operativas.</li>
+  <li>2 - Realizar como mínimo 4 posteos semanales.</li>
+  <li>3 - Participar en Ligas o competencias que les permitan mostrar a sus jugadores generando interacción entre ellos en las redes sociales.</li>
+  <li>4 - En caso de no tenerlo, piensen en realizar un Dossier del equipo que les permita presentar al Club ante terceros (marcas, otros Clubes, etc.</li>
+  </ul>
+  <p>En el caso que cumplas con estos requisitos puede ser que, al completar el formulario </p>
+  <ul>
+  <li>Tus redes sociales están mal cargadas</li>
+  <li>No detallaste el nombre de la entidad</li>
+  <li>La cuenta está privada</li>
+  <li>El perfil no tenga publicaciones ni un logo</li>
+  <li>No se detalle que cuentan con jugadores Argentinos (en el caso de ser de otro país)</li>
+  <li>Se clasifique para club de esports, cuando deberìan clasificar para organizador de esports</li>
+  </ul>
+  <p>De ser este el caso, te pedimos que completes nuevamente el formulario con la información correcta y detallada para que lo podamos reevaluar</p> 
+  <p>Esperamos estos consejos les puedan llegar a ser útiles y en poco tiempo podamos volver a escribirnos para que vuelvan a aplicar como entidad certificada de DEVA.</p>
+  <? } ?>
+    <p>Si tienen alguna duda al respecto o quieren hacer alguna sugerencia, pueden responder el presente mail y también los invitamos a unirse a nuestro canal de <a href="http://discord.gg/TzfjdNDMse">Discord</a>
+    <br>
+    ¡Esperamos su respuesta! 
+    <br>
+    Saludos.
+    </p>
+    </body>
+  </html>
